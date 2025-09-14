@@ -135,9 +135,7 @@ const highlightRow = (position) => {
 };
 const addNewLetter = () => {
     const letterEl = document.createElement("p");
-    console.log(keyboard);
     const letter = weightedRandom(keyboard);
-    console.log(letter);
     letter.probability *= 0.01;
     letterEl.textContent = letter.key;
     stack.appendChild(letterEl);
@@ -162,6 +160,8 @@ const addLetterToField = () => {
 document.addEventListener("keydown", (event) => {
     const fc = field.firstChild;
     if (!fc)
+        return;
+    if (event.shiftKey)
         return;
     if (fc.textContent === event.key) {
         const birthTime = Number(fc.dataset.birthTime);
