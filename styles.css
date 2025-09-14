@@ -1,0 +1,106 @@
+.hand {
+  display: flex;              /* nebeneinander */
+  gap: 8px;                   /* Abstand */
+  justify-content: center;    /* zentrieren */
+  align-items: flex-end;      /* unten ausrichten */
+  height: 200px;
+  margin: 20px;
+  background: #f0f0f0;
+  padding: 10px;
+}  
+
+.highlight {
+  background: #d61a1a !important;
+}
+
+.letterContainer{
+  display: flex;
+  justify-content: center;   
+    align-items: flex-end;  
+}
+body {
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.letter{
+    display: flex;            
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fira Code', 'Share Tech Mono', monospace;         
+    justify-content: center;   
+    align-items: flex-end;    
+    background: #f0f0f0;
+}
+
+.hands {
+      display: flex;              /* nebeneinander */
+      gap: 20px;                   /* Abstand */
+      justify-content: center;    /* zentrieren */
+      align-items: flex-end;    
+      background: #f0f0f0;
+      padding: 10px;
+}
+
+.finger {
+      width: 40px;
+      background: #ddd;
+      border: 2px solid #333;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 5px;
+      font-size: 12px;
+    }
+
+/* Unterschiedliche Höhen für Finger */
+#pinky {
+  height: 100px;
+}
+#ring {
+  height: 140px;
+}
+#middle {
+  height: 160px;
+}
+#index {
+  height: 130px;
+}
+
+
+ dialog {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  button {
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+    .rows {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 450px;
+      margin: 0 auto;
+    }
+
+    .row {
+      height: 40px;
+      border-radius: 8px;
+      background: #ddd;
+      border: 2px solid #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .row.upper { background: #cce5ff; }   /* hellblau */
+    .row.middle { background: #d4edda; }  /* hellgrün */
+    .row.lower { background: #f8d7da; } 

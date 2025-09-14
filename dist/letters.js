@@ -1,0 +1,52 @@
+"use strict";
+const letters = "abcdefghijklmnopqrstuvwxyzöüäÖÜÄ;.-'+*".split("");
+// Finger-Map erweitern (für Sonderzeichen kann man "unknown" nehmen)
+const fingerMap = {
+    // Buchstaben wie bisher ...
+    a: { side: "left", finger: "pinky" },
+    s: { side: "left", finger: "ring" },
+    d: { side: "left", finger: "middle" },
+    f: { side: "left", finger: "index" },
+    g: { side: "left", finger: "index" },
+    h: { side: "right", finger: "index" },
+    j: { side: "right", finger: "index" },
+    k: { side: "right", finger: "middle" },
+    l: { side: "right", finger: "ring" },
+    ö: { side: "right", finger: "pinky" },
+    ü: { side: "right", finger: "pinky" },
+    ä: { side: "right", finger: "pinky" },
+    q: { side: "left", finger: "pinky" },
+    w: { side: "left", finger: "ring" },
+    e: { side: "left", finger: "middle" },
+    r: { side: "left", finger: "index" },
+    t: { side: "left", finger: "index" },
+    z: { side: "left", finger: "index" },
+    u: { side: "right", finger: "index" },
+    i: { side: "right", finger: "middle" },
+    o: { side: "right", finger: "ring" },
+    p: { side: "right", finger: "pinky" },
+    y: { side: "left", finger: "pinky" },
+    x: { side: "left", finger: "ring" },
+    c: { side: "left", finger: "middle" },
+    v: { side: "left", finger: "index" },
+    b: { side: "left", finger: "index" },
+    n: { side: "right", finger: "index" },
+    m: { side: "right", finger: "middle" },
+    ";": { side: "right", finger: "pinky" },
+    ".": { side: "right", finger: "pinky" },
+    "-": { side: "right", finger: "pinky" },
+    "'": { side: "right", finger: "pinky" },
+    "+": { side: "right", finger: "pinky" },
+    "*": { side: "right", finger: "pinky" },
+};
+const positionMap = {
+    a: "middleRow", s: "middleRow", d: "middleRow", f: "middleRow", g: "middleRow",
+    h: "middleRow", j: "middleRow", k: "middleRow", l: "middleRow", ö: "middleRow",
+    ü: "middleRow", ä: "middleRow",
+    q: "upperRow", w: "upperRow", e: "upperRow", r: "upperRow", t: "upperRow",
+    z: "upperRow", u: "upperRow", i: "upperRow", o: "upperRow", p: "upperRow",
+    y: "upperRow", x: "lowerRow", c: "lowerRow", v: "lowerRow", b: "lowerRow",
+    n: "lowerRow", m: "lowerRow",
+    ";": "lowerRow", ".": "lowerRow", "-": "lowerRow", "'": "lowerRow", "+": "lowerRow", "*": "lowerRow",
+};
+//# sourceMappingURL=letters.js.map
