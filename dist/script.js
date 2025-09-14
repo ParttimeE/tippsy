@@ -161,7 +161,7 @@ document.addEventListener("keydown", (event) => {
     const fc = field.firstChild;
     if (!fc)
         return;
-    if (event.shiftKey)
+    if (event.key == 'Shift')
         return;
     if (fc.textContent === event.key) {
         const birthTime = Number(fc.dataset.birthTime);
