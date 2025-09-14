@@ -201,7 +201,7 @@ const addLetterToField = () => {
 document.addEventListener("keydown", (event) => {
   const fc = field.firstChild as HTMLElement | null;
   if (!fc) return;
-
+  if (event.shiftKey) return; 
   if (fc.textContent === event.key) {
     const birthTime = Number(fc.dataset.birthTime);
     const lifeTime = Date.now() - birthTime;
